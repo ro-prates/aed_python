@@ -27,3 +27,16 @@ print(f'a soma eh: {soma}')
 
 #segunda parte
 dicionario = {}
+
+for i in range(3):
+    nome = input(f'digite o nome do aluno {i+1}:\n')
+    nota = int(input(f'digite a nota do aluno {i+1}:\n'))
+    dicionario[nome] = nota
+
+soma = 0
+for chave in dicionario.keys():
+    soma += dicionario[chave]
+
+media = soma / len(dicionario)
+
+print(f'a media eh: {media}')
