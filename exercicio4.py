@@ -10,7 +10,6 @@ crie uma nova estrutura de repetição para somar todas as notas e retornar a m�
 3- Matriz: Dada a matriz abaixo, construa uma estrutura de repetição para percorrer 
 e somar todos os elementos da matriz
 '''
-
 #primeira parte
 lista = []
 
@@ -40,3 +39,15 @@ for chave in dicionario.keys():
 media = soma / len(dicionario)
 
 print(f'a media eh: {media}')
+
+#terceira parte
+import numpy as np
+matriz = np.array([[3, 4, 1],
+                   [3, 1, 5]])
+
+soma = 0
+for linha in range(matriz.shape[0]):
+    for coluna in range(matriz.shape[1]):
+        soma +=matriz[linha][coluna]
+
+print(f'soma: {soma}')
